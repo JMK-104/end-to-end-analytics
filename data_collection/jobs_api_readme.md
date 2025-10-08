@@ -1,4 +1,4 @@
-# Jobs Data Pipeline
+# Jobs Data Ingestion Pipeline
 
 A robust data ingestion pipeline that fetches job postings from the Findwork API and loads them into a Databricks environment for downstream analytics and processing.
 
@@ -72,7 +72,6 @@ Run the notebook cells sequentially:
 
 ## Performance
 
-- Fetches 100 records per API call
 - Processes full dataset in under 2 minutes (typical)
 - Utilizes PySpark for efficient distributed writes
 
