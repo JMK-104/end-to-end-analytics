@@ -1,14 +1,31 @@
+/*
+Exploratory Data Analysis (EDA):
+  Purpose:
+    - Explore the data set to identify key characteristics
+    - Build an understanding of the relevant columns, rows and datatypes
+  Scope:
+    This EDA script will identify the following:
+    - Number of rown in the dataset
+    - Distinct roles represented in the dataset
+    - Distinct company names represented in the dataset
+    - Distinct employment types
+    - Distinct job locations
+    - Remote vs non-remote status
+    - Source information for job posting
+    - Relevant metadata for the dataset 
+*/
+
 -- High level overview of the data
 SELECT * FROM bronze.jobs_table;
 
 -- Show the number of items in the database (1466 rows)
 SELECT COUNT(*) FROM bronze.jobs_table;
 
--- Distinct roles represented in the database
+-- Distinct roles
 -- 1181 distinct roles. High cardinality
 SELECT DISTINCT role FROM bronze.jobs_table;
 
--- Distinct company names represented in the database
+-- Distinct company names
 -- 937 rows. High Caridnality
 SELECT DISTINCT company_name FROM bronze.jobs_table;
 
