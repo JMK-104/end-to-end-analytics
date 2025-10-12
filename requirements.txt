@@ -16,6 +16,7 @@ pyarrow>=14.0.1
 # NLP / Fuzzy Matching (for location enrichment)
 fuzzywuzzy[speedup]>=0.18.0
 geopy>=2.4.1
+geotext>=0.4.0
 spacy>=3.7.2
 textblob>=0.17.1
 
