@@ -1,6 +1,7 @@
 /*
 Initialize Database Schemas;
-  The purpose of this script is to initialize all necessary schemas for this project
+  The purpose of this script is to initialize all necessary schemas for this project.
+  Python dependencies are also installed in this
   
   Schemas:
     - bronze
