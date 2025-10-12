@@ -1,0 +1,31 @@
+# Core Data Libraries
+pandas>=2.0.0
+numpy>=1.24.0
+
+# API Calls and Requests
+requests>=2.31.0
+
+# Spark / Databricks
+pyspark>=3.5.0
+delta-spark>=3.2.0
+
+# Data Cleaning & Processing
+python-dateutil>=2.9.0
+pyarrow>=14.0.1
+
+# NLP / Fuzzy Matching (for location enrichment)
+fuzzywuzzy[speedup]>=0.18.0
+geopy>=2.4.1
+spacy>=3.7.2
+textblob>=0.17.1
+
+# Environment and Config Management
+python-dotenv>=1.0.1
+
+# Optional: Logging & Progress
+tqdm>=4.66.1
+loguru>=0.7.2
+
+# Optional: Testing / Notebooks
+ipykernel>=6.29.0
+notebook>=7.1.2
