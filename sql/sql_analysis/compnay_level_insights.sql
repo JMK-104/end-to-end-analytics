@@ -1,3 +1,9 @@
+/*
+Company Level Insights
+
+The following SQL queries are intended to provide insights into companies and their job postings.
+*/
+
 -- Which companies post the highest number of jobs overall
 -- The following query returns the top 10 companies by number of postings
 SELECT
