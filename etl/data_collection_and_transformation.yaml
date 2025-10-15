@@ -1,0 +1,45 @@
+resources:
+  jobs:
+    data_collection_and_transformation:
+      name: data_collection_and_transformation
+      trigger:
+        pause_status: UNPAUSED
+        periodic:
+          interval: 1
+          unit: DAYS
+      tasks:
+        - task_key: initialize_project
+          notebook_task:
+            notebook_path: /Workspace/Users/justin.mk.1004@gmail.com/end-to-end-analytics/sql/init
+            source: WORKSPACE
+        - task_key: fetch_data
+          depends_on:
+            - task_key: initialize_project
+          notebook_task:
+            notebook_path: /Workspace/Users/justin.mk.1004@gmail.com/end-to-end-analytics/data_collection/fetch_data
+            source: WORKSPACE
+        - task_key: silver_layer
+          depends_on:
+            - task_key: fetch_data
+          sql_task:
+            file:
+              path: /Workspace/Users/justin.mk.1004@gmail.com/end-to-end-analytics/sql/silver_transformations.sql
+              source: WORKSPACE
+            warehouse_id: f8d9609b660e42a5
+        - task_key: gold_city_and_country
+          depends_on:
+            - task_key: silver_layer
+          notebook_task:
+            notebook_path: /Workspace/Users/justin.mk.1004@gmail.com/end-to-end-analytics/sql/city_and_country.ipynb
+            source: WORKSPACE
+        - task_key: gold_final
+          depends_on:
+            - task_key: gold_city_and_country
+          sql_task:
+            file:
+              path: /Workspace/Users/justin.mk.1004@gmail.com/end-to-end-analytics/sql/gold_ddl.sql
+              source: WORKSPACE
+            warehouse_id: f8d9609b660e42a5
+      queue:
+        enabled: true
+      performance_target: PERFORMANCE_OPTIMIZED
