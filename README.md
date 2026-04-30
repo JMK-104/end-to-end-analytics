@@ -1,5 +1,4 @@
-# SQL Data Analytics Project  
-**End-to-End Data Pipeline & Analytics with the Findwork API**
+# End-to-End Data Pipeline & Analytics with the Findwork API
 
 This project demonstrates a complete **data analytics pipeline** — from automated data collection to analytical insights — built with **Python, SQL, and Databricks**.  
 It highlights how modern data engineering practices can be applied to real-world job market data to extract meaningful business insights.
