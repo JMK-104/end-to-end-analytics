@@ -96,7 +96,7 @@ Some of the key analytical questions answered include:
 
 ---
 
-## 🚀 Automation & Orchestration
+## Automation & Orchestration
 
 - **Daily refresh** of job data via Databricks job scheduler  
 - **ETL configuration** managed in `etl/data_collection_and_transformation.yaml`  
