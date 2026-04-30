@@ -92,7 +92,7 @@ Some of the key analytical questions answered include:
 9. How diverse is the global job market across industries?  
 10. Which companies consistently post over multiple months?
 
-*(See `sql/sql_analysis/` for all analytical queries.)*
+The full set of analytical queries can be found [here](sql/sql_analysis)
 
 ---
 
