@@ -6,7 +6,7 @@ It highlights how modern data engineering practices can be applied to real-world
 
 ---
 
-## 📁 Project Overview
+## Project Overview
 
 | Phase | Description |
 |-------|--------------|
@@ -16,7 +16,7 @@ It highlights how modern data engineering practices can be applied to real-world
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 - **Python 3.9+** — for API integration and preprocessing  
 - **Databricks SQL Warehouse** — for query execution and data warehousing  
@@ -27,7 +27,7 @@ It highlights how modern data engineering practices can be applied to real-world
 
 ---
 
-## 🧩 Repository Structure
+## Repository Structure
 
 ```text
 end-to-end-analytics/
@@ -59,17 +59,17 @@ end-to-end-analytics/
 
 ---
 
-## 🔁 Data Pipeline Overview
+## Data Pipeline Overview
 
-### 🥉 **Bronze Layer**
+### **Bronze Layer**
 - Raw job posting data fetched via Findwork API (`fetch_data.ipynb`)
 - Data automatically refreshed **once per day** using a scheduled Databricks workflow
 
-### 🥈 **Silver Layer**
+### **Silver Layer**
 - Cleansed and standardized the bronze data
 - Handled missing fields, normalized column names, and prepared data for analytics
 
-### 🥇 **Gold Layer**
+### **Gold Layer**
 - Enriched data with derived attributes such as **city** and **country** (via NLP/GeoText)
 - Created analytical models:
   - `gold.fact_job_postings`
@@ -78,7 +78,7 @@ end-to-end-analytics/
 
 ---
 
-## 📊 Analytical Questions
+## Analytical Questions
 
 Some of the key analytical questions answered include:
 
